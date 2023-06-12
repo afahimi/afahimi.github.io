@@ -15,7 +15,7 @@ Backgrund Color: d0e8fd
 
 const App = () => {
   return (
-    <div className={classes.global}>
+    <div className={`${classes.global} ${classes.container}`}>
       <NavBar />
       <IntroScreen />
     </div>

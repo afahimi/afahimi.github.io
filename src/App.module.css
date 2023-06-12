@@ -1,4 +1,16 @@
 .global {
-    background-color: #d0e8fd;
-    min-height: 100vh;
+  background-color: #d0e8fd;
+  min-height: 100vh;
+}
+
+.container {
+  width: 100%;
+  margin: 0 auto;
+}
+
+/* This will apply when the screen width is below 600px */
+@media screen and (max-width: 600px) {
+  .container {
+    width: 95%;
+  }
 }
