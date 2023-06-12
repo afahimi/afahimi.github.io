@@ -10,7 +10,7 @@ Darker Azure: CCE0E5
 Button Color: A9CAD2
 Button Color (Hover): 7FA6AC
 Backgrund Color: d0e8fd
-
+Prominent Buton: 769FA7
 */
 
 const App = () => {

@@ -49,3 +49,8 @@
     from, to { border-color: transparent }
     50% { border-color: rgb(0, 0, 0); }
   }
+
+
+  .btnContainer {
+    margin-top: 20px;
+  }

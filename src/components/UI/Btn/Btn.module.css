@@ -20,3 +20,13 @@
     background-color: #7FA6AC;
     border-color: #7FA6AC;
 }
+
+.prominent {
+    background-color: #769FA7 !important;
+    border-color: #769FA7 !important;
+}
+
+.prominent:hover {
+    background-color: #63878A !important;
+    border-color: #63878A !important;
+}

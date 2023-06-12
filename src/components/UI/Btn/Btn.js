@@ -2,7 +2,8 @@ import React from "react";
 import classes from "./Btn.module.css";
 
 const Btn = (props) => {
-  return <button className={classes.btn}>{props.value}</button>;
+  const combinedClasses = `${classes.btn} ${classes[props.className]}`;  // Changed this line
+  return <button className={combinedClasses}>{props.value}</button>;
 };
 
 export default Btn;
