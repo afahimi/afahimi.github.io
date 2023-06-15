@@ -1,0 +1,24 @@
+.textBox {
+    background-color: black;
+    padding: 20px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease-in-out;
+}
+
+.textBox:hover {
+    transform: scale(1.1);
+}
+
+.textBox h1 {
+    margin-bottom: 20px;
+}
+
+.textBox hr {
+    border: 0;
+    border-top: 1px solid grey;
+    margin: 20px 0;
+}
+
+.textBox p {
+    margin-top: 20px;
+}

@@ -1,7 +1,7 @@
 import React from "react";
-import Logo from "../Logo/Logo";
+import Logo from "../Elements/Logo/Logo";
 import classes from "./NavBar.module.css";
-import Btn from "../Btn/Btn";
+import Btn from "../Elements/Btn/Btn";
 
 const NavBar = () => {
   return (

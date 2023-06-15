@@ -1,0 +1,14 @@
+.verticalLine {
+  border-left: 2px solid #f5faff; /* Darker variant of navbar color */
+  height: 80%; /* Adjust height as needed */
+  margin: 0 10px; /* Space around the line */
+}
+
+.textSection {
+  margin-right: 150px; /* Adds space to the left of the text section */
+}
+
+.hr {
+  background-color: #fff !important;
+  border-top: 2px dashed #8c8b8b;
+}

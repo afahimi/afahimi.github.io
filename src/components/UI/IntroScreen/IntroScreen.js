@@ -2,7 +2,7 @@ import React from "react";
 import AboutPanel from "../AboutPanel/AboutPanel";
 import classes from "./IntroScreen.module.css";
 import pfp from "../images/pfp.jpeg";
-import Btn from "../Btn/Btn";
+import Btn from "../Elements/Btn/Btn";
 
 const IntroScreen = () => {
   return (
@@ -13,7 +13,7 @@ const IntroScreen = () => {
         <h1 className={classes.typewriter}>👋 Hello, I am Amin!</h1>
         <h3>Welcome to my personal website.</h3>
         <div className={classes.btnContainer}>
-          <Btn value="Download my Resume" className="prominent" />
+          {/* <Btn value="Download my Resume" className="prominent" /> */}
         </div>
       </div>
     </AboutPanel>

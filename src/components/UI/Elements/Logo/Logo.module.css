@@ -1,0 +1,25 @@
+.logoButton {
+    background-color: #A9CAD2; 
+    border: none;
+    cursor: pointer;
+    overflow: visible;
+    outline: none;
+    position: relative;
+    border-radius: 10px;  /* Small border radius for rounded rectangle */
+    padding: 10px;  /* Add some padding */
+    transition: color .15s ease-in-out, background-color .15s ease-in-out, border-color .15s ease-in-out, box-shadow .15s ease-in-out;
+  }
+  
+  .logoButton:hover {
+    background-color: #7FA6AC;
+    cursor: pointer; 
+  }
+  
+  .logoImage {
+    width: 80%;
+    height: auto;
+    transition: transform .2s;
+    display: block;  /* Add display block */
+    margin: 0 auto;  /* Center the image horizontally */
+  }
+  
