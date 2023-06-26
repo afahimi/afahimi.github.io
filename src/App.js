@@ -4,6 +4,7 @@ import AboutPanel from "./components/UI/AboutPanel/AboutPanel";
 import classes from "./App.module.css";
 import IntroScreen from "./components/UI/IntroScreen/IntroScreen";
 import AboutScreen from "./components/UI/AboutScreen/AboutScreen";
+import Footer from "./components/UI/Footer/Footer";
 
 /*
 Azure: F0FFFF
@@ -23,6 +24,7 @@ const App = () => {
         <NavBar />
         <IntroScreen />
         <AboutScreen backgroundColor="#B2D4E1" />
+        <Footer />
       </div>
     </>
   );

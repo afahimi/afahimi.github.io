@@ -1,0 +1,25 @@
+.footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background-color: #769FA7; /* You can change the color as per your preference */
+    color: #fff; /* This will make the text white */
+  }
+  
+  .links {
+    display: flex;
+    gap: 10px; /* This will add space between the links */
+  }
+  
+  .links a {
+    color: #fff; /* This will make the links white */
+    text-decoration: none; /* This will remove the underline from the links */
+  }
+  
+  .copywright {
+    font-size: 0.875rem; /* This will make the copyright text smaller */
+    font-family: "Inter", sans-serif;
+    font-weight: 500;
+  }
+  
