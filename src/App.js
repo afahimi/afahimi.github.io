@@ -4,7 +4,6 @@ import AboutPanel from "./components/UI/AboutPanel/AboutPanel";
 import classes from "./App.module.css";
 import IntroScreen from "./components/UI/IntroScreen/IntroScreen";
 import AboutScreen from "./components/UI/AboutScreen/AboutScreen";
-import TextBox from "./components/UI/Elements/TextBox/TextBox";
 
 /*
 Azure: F0FFFF

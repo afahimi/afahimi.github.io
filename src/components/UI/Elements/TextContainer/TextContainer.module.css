@@ -1,0 +1,16 @@
+.container {
+    background-color: #f5faff; 
+    border: none;
+    cursor: pointer;
+    overflow: visible;
+    outline: none;
+    position: relative;
+    border-radius: 10px;  /* Small border radius for rounded rectangle */
+    padding: 10px;  /* Add some padding */
+    transition: color .15s ease-in-out, background-color .15s ease-in-out, border-color .15s ease-in-out, box-shadow .15s ease-in-out;
+    transition: transform 0.3s ease-in-out; /* Transition for hover effect */
+}
+
+.container:hover {
+    transform: scale(1.05); /* Minimal hover effect */
+}

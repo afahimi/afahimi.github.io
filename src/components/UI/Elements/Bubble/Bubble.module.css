@@ -1,0 +1,35 @@
+.bubble {
+    position: relative;
+    background: #f5faff;
+    border-radius: 10px;
+    padding: 20px;
+    width: 200px;
+    height: auto;
+    color: black;
+    text-align: center;
+    font-size: 24px;
+    box-shadow: 2px 2px 10px rgba(0,0,0,0.1);
+    transition: transform 0.3s ease-in-out; /* Transition for hover effect */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .bubble:after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    width: 0;
+    height: 0;
+    border: 20px solid transparent;
+    border-top-color: #f5faff;
+    border-bottom: 0;
+    border-right: 0;
+    margin-left: -10px;
+    margin-bottom: -20px;
+  }
+  
+  .bubble:hover {
+    transform: scale(1.05); /* Minimal hover effect */
+  }

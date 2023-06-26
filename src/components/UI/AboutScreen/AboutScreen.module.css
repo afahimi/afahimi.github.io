@@ -1,14 +1,37 @@
+.bubbleWrapper,
+/* .verticalLineWrapper, */
+.textSectionContainer {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 .verticalLine {
-  border-left: 2px solid #f5faff; /* Darker variant of navbar color */
-  height: 80%; /* Adjust height as needed */
-  margin: 0 10px; /* Space around the line */
+  background: #f5faff;
+  width: 2px !important;
+  height: 80%;
+  /* flex: 1; */
+  /* display: flex;
+  justify-content: center;
+  align-items: center; */
 }
 
-.textSection {
-  margin-right: 150px; /* Adds space to the left of the text section */
+.textSectionContainer {
+  margin-left: 100px;
+  margin-right: 50px;
+  max-width: 600px; /* Adjusted for wider text */
+  padding: 20px; /* Adjusted for smaller padding */
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
-.hr {
-  background-color: #fff !important;
-  border-top: 2px dashed #8c8b8b;
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%; /* Adjust as needed */
 }
+
+
