@@ -4,6 +4,7 @@ import classes from "./AboutScreen.module.css";
 import { H1, H3 } from "../Elements/Typography/Typography";
 import Bubble from "../Elements/Bubble/Bubble";
 import TextContainer from "../Elements/TextContainer/TextContainer";
+import SocialLinks from "../SocialLinks/SocialLinks";
 
 const AboutScreen = (props) => {
   return (
@@ -36,6 +37,9 @@ const AboutScreen = (props) => {
             hope you enjoy browsing my website!
           </H3>
         </TextContainer>
+        <div className={classes.links_container}>
+          <SocialLinks />
+        </div>
       </div>
     </AboutPanel>
   );

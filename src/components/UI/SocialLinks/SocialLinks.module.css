@@ -1,0 +1,22 @@
+.socialLinks {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 40px; /* Adjust the space between the icons as needed */
+  }
+  
+  .socialLink {
+    color: inherit; /* The icons will inherit the color of the text */
+    text-decoration: none; /* Removes the underline from the links */
+    transition: color .15s ease-in-out, background-color .15s ease-in-out, border-color .15s ease-in-out, box-shadow .15s ease-in-out !important;
+    }
+
+  .socialLink:hover {
+    transform: scale(1.05) !important; /* Minimal hover effect */
+  }
+  
+  .socialIcon {
+    font-size: 24px; /* Adjust the size of the icons as needed */
+  }
+  

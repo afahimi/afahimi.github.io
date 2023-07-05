@@ -5,6 +5,7 @@ import classes from "./App.module.css";
 import IntroScreen from "./components/UI/IntroScreen/IntroScreen";
 import AboutScreen from "./components/UI/AboutScreen/AboutScreen";
 import Footer from "./components/UI/Footer/Footer";
+import SocialLinks from "./components/UI/SocialLinks/SocialLinks";
 
 /*
 Azure: F0FFFF
