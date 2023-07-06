@@ -5,7 +5,6 @@ import { H1, H3 } from "../Elements/Typography/Typography";
 import Bubble from "../Elements/Bubble/Bubble";
 import TextContainer from "../Elements/TextContainer/TextContainer";
 import SocialLinks from "../SocialLinks/SocialLinks";
-//about screen for website flow
 const AboutScreen = (props) => {
   return (
     <AboutPanel backgroundColor={props.backgroundColor}>
