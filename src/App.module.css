@@ -1,5 +1,5 @@
 .global {
-  background-color: #d0e8fd;
+  background-color: #F0FFFF;
   min-height: 100vh;
 }
 
@@ -14,3 +14,4 @@
     width: 95%;
   }
 }
+/* #d0e8fd; */

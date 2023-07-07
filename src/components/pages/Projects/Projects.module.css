@@ -1,0 +1,22 @@
+.Projects {
+    background-color: #F0FFFF;
+}
+
+.titleScreen {
+    margin-top: 20px;
+    text-align: center;
+}
+
+.hrstyle {
+    border: 0;
+    height: 0; /* Firefox... */
+    box-shadow: 0 0 10px 1px black;
+    margin-top: 10px;
+    width: 50%; /* Adjust as needed */
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.hrstyle:after {
+    content: "\00a0";  /* Prevent margin collapse */
+}

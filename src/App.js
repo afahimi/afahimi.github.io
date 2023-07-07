@@ -11,6 +11,17 @@ import Notes from "./components/pages/Notes/Notes";
 import Blog from "./components/pages/Blog/Blog";
 import Contact from "./components/pages/Contact/Contact";
 
+/*
+Azure: F0FFFF
+Darker Azure: CCE0E5
+Button Color: A9CAD2
+Button Color (Hover): 7FA6AC
+Backgrund Color: d0e8fd
+Prominent Buton: 769FA7
+About Panel 1: f5faff
+About Panel 2: B2D4E1
+*/
+
 const App = () => {
   return (
     <div className={`${classes.global} ${classes.container}`}>
