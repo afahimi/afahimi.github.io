@@ -8,7 +8,7 @@ import { H1, P } from "../../../UI/Elements/Typography/Typography";
 import Keyword from "./Keyword/Keyword";
 import {
   faClock,
-  faUser,
+  faHouse,
   faMapMarkerAlt,
 } from "@fortawesome/free-solid-svg-icons";
 
@@ -20,6 +20,22 @@ const IconText = ({ icon, children }) => (
 );
 
 const ProjectItem = (props) => {
+  const githubIcon = () => {
+    if (props.hasref === true) {
+      return (
+        <div className={classes.githubicon}>
+          <a
+            href={props.href}
+            target="_blank"
+            className={classes.githubLink}
+            rel="noreferrer"
+          >
+            <FaGithub className={classes.githubIcon} />
+          </a>
+        </div>
+      );
+    }
+  };
   const content = (
     <>
       <H1 className={classes.typewriter}>{props.title}</H1>
@@ -27,7 +43,7 @@ const ProjectItem = (props) => {
       <div className={classes.iconGroup}>
         <IconText icon={faClock}>{props.date}</IconText>
         <br />
-        <IconText icon={faUser}>{props.people}</IconText>
+        <IconText icon={faHouse}>{props.context}</IconText>
         <br />
         <IconText icon={faMapMarkerAlt}>{props.location}</IconText>
       </div>
@@ -40,16 +56,7 @@ const ProjectItem = (props) => {
           ))}
         </div>
         <br />
-        <div className={classes.githubicon}>
-          <a
-            href={props.href}
-            target="_blank"
-            className={classes.githubLink}
-            rel="noreferrer"
-          >
-            <FaGithub className={classes.githubIcon} />
-          </a>
-        </div>
+        {githubIcon()}
       </div>
     </>
   );
