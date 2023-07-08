@@ -67,3 +67,7 @@
   color: inherit; /* Make sure the link color doesn't affect the icon */
   text-decoration: none; /* Removes underline */
 }
+
+.keywords {
+    text-align: center;
+}

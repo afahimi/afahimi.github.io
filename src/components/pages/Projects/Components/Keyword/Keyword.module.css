@@ -1,0 +1,15 @@
+.keyword {
+    display: inline-block;
+    background-color: #f2f2f2;
+    padding: 5px 10px; /* reduced from 10px 20px to 5px 10px */
+    margin: 5px; /* reduced from 10px to 5px */
+    border-radius: 12.5px; /* reduced from 25px to 12.5px */
+    text-align: center;
+    font-weight: bold;
+    font-size: 0.75em; /* added to reduce the font size */
+    transition: transform 0.3s ease-in-out; /* Transition for hover effect */
+}
+
+.keyword:hover {
+    transform: scale(1.15); /* Minimal hover effect */
+}
