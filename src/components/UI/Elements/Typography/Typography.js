@@ -16,3 +16,11 @@ export const H3 = (props) => {
         </h3>
     );
 }
+
+export const P = (props) => {
+    return (
+        <p className={classes.p}>
+            {props.children}
+        </p>
+    );
+}
