@@ -32,7 +32,7 @@ const App = () => {
           <Route path="/notes" element={<Notes />} />
           <Route path="/blog" element={<Blog />} />
           <Route path="/contact" element={<Contact />} />
-          <Route path="/" element={
+          <Route path="/updated-site" element={
             <>
               <IntroScreen />
               <AboutScreen backgroundColor="#B2D4E1" />
