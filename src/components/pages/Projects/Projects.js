@@ -76,7 +76,7 @@ const Projects = () => {
     {
       title: "Data Analysis Project",
       context: "STEM Fellowship Big Data Challenge",
-      img: process.env.PUBLIC_URL + "/images/ProjectImages/BigData.png",
+      img: process.env.PUBLIC_URL + "/Images/ProjectImages/BigData.png",
       date: "Summer 2021",
       location: "Vancouver, BC",
       description: `This project was completed as part of the STEM Fellowship Big Data Challenge. The goal of the project was to analyze a dataset of our choice and and write a
