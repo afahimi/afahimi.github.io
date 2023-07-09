@@ -5,7 +5,7 @@ import { H1 } from "../../UI/Elements/Typography/Typography";
 import classes from "./Projects.module.css";
 import TextContainer from "../../UI/Elements/TextContainer/TextContainer";
 import ProjectItem from "./Components/ProjectItem";
-import IntelliFeeder from "./ProjectImages/IntelliFeeder.jpg";
+import IntelliFeeder from "./../../UI/images/signature.png";
 
 const Projects = () => {
   const projects = [
