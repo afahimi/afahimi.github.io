@@ -11,7 +11,7 @@ const Projects = () => {
     {
       title: "IntelliFeeder",
       context: "Computer Engineering Design Project",
-      img: "./../../../UI/images/signature.png",
+      img: process.env.PUBLIC_URL + "/Images/ProjectImages/IntelliFeeder.jpg",
       date: "Feburary 2023 - April 2023",
       location: "University of British Columbia",
       description: `IntelliFeeder is a smart pet feeder that allows pet owners to feed their pets remotely.
