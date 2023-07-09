@@ -1,5 +1,7 @@
 /* App.module.css or index.css */
-
+body {
+  zoom: 1.25;
+}
 
 .global {
   background-color: #F0FFFF;
