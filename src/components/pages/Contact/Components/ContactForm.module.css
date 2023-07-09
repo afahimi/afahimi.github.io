@@ -1,0 +1,35 @@
+.contactForm {
+    width: 80%;
+    margin: 0 auto;
+    padding: 1em;
+    background-color: #B2D4E1;
+    border-radius: 8px;
+    box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.1);
+}
+
+.inputField, .textArea {
+    width: 100%;
+    padding: 0.5em;
+    margin-bottom: 1em;
+    border-radius: 4px;
+    border: none;
+    background-color: #CCE0E5;
+}
+
+.textArea {
+    height: 150px;
+    resize: none;
+}
+
+.submitButton {
+    padding: 0.5em 1em;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    background-color: #7FB3D5;
+    cursor: pointer;
+}
+
+.submitButton:hover {
+    background-color: #5499C7;
+}
