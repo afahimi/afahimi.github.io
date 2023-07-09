@@ -120,6 +120,7 @@ const Projects = () => {
     <div className={classes.titleScreen}>
       <H1>Projects</H1>
       <br />
+      {console.log(__dirname)}
       {projects.map((project, index) => (
         <ProjectItem
           key={index}
