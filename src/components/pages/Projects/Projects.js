@@ -90,7 +90,7 @@ const Projects = () => {
     {
       title: "CRASH Unix Terminal",
       context: "UBC CPEN 212 - Computing Systems II",
-      img: "/images/ProjectImages/linux.png",
+      img: process.env.PUBLIC_URL + "/images/ProjectImages/linux.png",
       date: "Feburary 2023 - April 2023",
       location: "University of British Columbia",
       description: `This project is a Unix terminal that is built from scratch using C. It is able to execute commands such as ls, cd, cat, grep, and more.
