@@ -5,14 +5,13 @@ import { H1 } from "../../UI/Elements/Typography/Typography";
 import classes from "./Projects.module.css";
 import TextContainer from "../../UI/Elements/TextContainer/TextContainer";
 import ProjectItem from "./Components/ProjectItem";
-import IntelliFeeder from "./../../UI/images/signature.png";
 
 const Projects = () => {
   const projects = [
     {
       title: "IntelliFeeder",
       context: "Computer Engineering Design Project",
-      img: IntelliFeeder,
+      img: "./../../../UI/images/signature.png",
       date: "Feburary 2023 - April 2023",
       location: "University of British Columbia",
       description: `IntelliFeeder is a smart pet feeder that allows pet owners to feed their pets remotely.
