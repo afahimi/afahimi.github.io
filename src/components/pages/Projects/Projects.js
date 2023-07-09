@@ -25,7 +25,7 @@ const Projects = () => {
     {
       title: "Personal Website",
       context: "Personal Project",
-      img: process.env.PUBLIC_URL + "/images/ProjectImages/PersonalWebsite.jpg",
+      img: process.env.PUBLIC_URL + "/Images/ProjectImages/PersonalWebsite.jpg",
       date: "April 2023 - Present",
       location: "Vancouver, BC",
       description: `This website serves as an outlet for me to showcase my projects and skills. It is built using React and is hosted on Github Pages.
@@ -38,7 +38,7 @@ const Projects = () => {
     {
       title: "Caption Concierge",
       context: "NW Hacks 2023",
-      img: process.env.PUBLIC_URL + "/images/ProjectImages/CaptionConcierge.jpg",
+      img: process.env.PUBLIC_URL + "/Images/ProjectImages/CaptionConcierge.jpg",
       date: "January 2023",
       location: "University of British Columbia",
       description: `Caption Concierge is a web application enables users to generate a detailed and accurate summary of any YouTube video by 
@@ -51,7 +51,7 @@ const Projects = () => {
     {
       title: "Dancing Robot",
       context: "Computer Engineering Design Project",
-      img: process.env.PUBLIC_URL + "/images/ProjectImages/DancingRobot.jpg",
+      img: process.env.PUBLIC_URL + "/Images/ProjectImages/DancingRobot.jpg",
       date: "Feburary 2023 - April 2023",
       location: "University of British Columbia",
       description: `This is a 3D printed robot that is able to dance to music. It uses a Raspberry Pi Pico-H to interface with a servo motor, speaker and numpad to allow the user to
@@ -63,7 +63,7 @@ const Projects = () => {
     {
       title: "SSC Tools",
       context: "Personal Project",
-      img: process.env.PUBLIC_URL + "/images/ProjectImages/SSCTools.jpg",
+      img: process.env.PUBLIC_URL + "/Images/ProjectImages/SSCTools.jpg",
       date: "April 2023",
       location: "Vancouver, BC",
       description: `SSC Tools is a set of scripts written in Selenium that automates the process of checking course grades on UBC's Student Service Centre.
@@ -90,7 +90,7 @@ const Projects = () => {
     {
       title: "CRASH Unix Terminal",
       context: "UBC CPEN 212 - Computing Systems II",
-      img: process.env.PUBLIC_URL + "/images/ProjectImages/linux.png",
+      img: process.env.PUBLIC_URL + "/Images/ProjectImages/linux.png",
       date: "Feburary 2023 - April 2023",
       location: "University of British Columbia",
       description: `This project is a Unix terminal that is built from scratch using C. It is able to execute commands such as ls, cd, cat, grep, and more.
@@ -103,7 +103,7 @@ const Projects = () => {
     {
       title: "RISC Machine CPU",
       context: "UBC CPEN 211 - Digital Systems Design",
-      img: process.env.PUBLIC_URL + "/images/ProjectImages/modelsim.png",
+      img: process.env.PUBLIC_URL + "/Images/ProjectImages/modelsim.png",
       date: "November 2022 - December 2022",
       location: "University of British Columbia",
       description: `This project is a 32-bit RISC machine CPU that is built from scratch using SystemVerilog. It is able to execute instructions from the Arm
