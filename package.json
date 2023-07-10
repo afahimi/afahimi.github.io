@@ -24,7 +24,7 @@
   "scripts": {
     "start": "react-scripts start",
     "predeploy": "npm run build",
-    "deploy": "gh-pages -d build",
+    "deploy": "gh-pages -d build && npm run postdeploy",
     "postdeploy": "move-cli build/index.html build/404.html && move-cli build/index.html build/200.html",
     "build": "react-scripts build",
     "test": "react-scripts test",
