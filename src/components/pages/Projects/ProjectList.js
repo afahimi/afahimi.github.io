@@ -28,7 +28,7 @@ export const ProjectList = [
   },
   {
     title: "Mission Planner Scripts",
-    context: "UBC Uncrewed Aircraft Systems Design Project",
+    context: "UBC Uncrewed Aircraft Systems",
     date: "September 2022 - April 2023",
     location: "University of British Columbia",
     img:
@@ -37,7 +37,7 @@ export const ProjectList = [
     description: `This project was completed as a part of the UBC Uncrewed Aircraft Systems Design-Team. It is a REST API written in Python that interfaces with
       the Mission Planner software to automate the process of creating flight plans for the team's drone. It provides a list of endpoints that enables
       the user to create, edit and delete flight plans on Mission Planner for an automated drone. It also includes additional functionality such as exclusion zones
-      around any polygonal area`,
+      around any polygonal area.`,
     keywords: ["Python", "Flask", "REST API", "Mission Planner"],
     hasref: true,
     href: "https://github.com/ubcuas/MissionPlanner-Scripts",
