@@ -43,6 +43,18 @@ export const ProjectList = [
     href: "https://github.com/ubcuas/MissionPlanner-Scripts",
   },
   {
+    title: "Dancing Robot",
+    context: "Computer Engineering Design Project",
+    img: process.env.PUBLIC_URL + "/Images/ProjectImages/DancingRobot.jpg",
+    date: "Feburary 2023 - April 2023",
+    location: "University of British Columbia",
+    description: `This is a 3D printed robot that is able to dance to music. It uses a Raspberry Pi Pico-H to interface with a servo motor, speaker and numpad to allow the user to
+      toggle different dance modes. As the robot dances, it plays music through the speaker and displays the current dance mode a built-in LED.`,
+    keywords: ["Embedded Systems", "Circuit-Python", "Serial Communication"],
+    hasref: true,
+    href: "https://github.com/afahimi/Dancing-Robot", //TODO: Add link to github repo
+  },
+  {
     title: "Caption Concierge",
     context: "NW Hacks 2023",
     img: process.env.PUBLIC_URL + "/Images/ProjectImages/CaptionConcierge.jpg",
@@ -54,18 +66,6 @@ export const ProjectList = [
     keywords: ["ReactJs", "OpenAI API", "YouTube API", "HTML/CSS"],
     hasref: true,
     href: "https://github.com/afahimi/CaptionConcierge-NWHacks2023",
-  },
-  {
-    title: "Dancing Robot",
-    context: "Computer Engineering Design Project",
-    img: process.env.PUBLIC_URL + "/Images/ProjectImages/DancingRobot.jpg",
-    date: "Feburary 2023 - April 2023",
-    location: "University of British Columbia",
-    description: `This is a 3D printed robot that is able to dance to music. It uses a Raspberry Pi Pico-H to interface with a servo motor, speaker and numpad to allow the user to
-      toggle different dance modes. As the robot dances, it plays music through the speaker and displays the current dance mode a built-in LED.`,
-    keywords: ["Embedded Systems", "Circuit-Python", "Serial Communication"],
-    hasref: true,
-    href: "https://github.com/afahimi/Dancing-Robot", //TODO: Add link to github repo
   },
   {
     title: "SSC Tools",
