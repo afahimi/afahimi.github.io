@@ -8,6 +8,19 @@
   margin-right: 100px;
 }
 
+/* Small devices (phones, less than 600px) */
+@media only screen and (max-width: 600px) {
+  .profilePic {
+    /* Scale down image size for small devices */
+    width: 200px;
+    height: 200px;
+    /* Smaller margins for mobile devices */
+    margin-left: 30px;
+    margin-right: 30px;
+  }
+}
+
+
 .profilePic:hover {
   transform: scale(1.05); /* Minimal hover effect */
 }
@@ -21,6 +34,15 @@
 .textSection {
   margin-right: 100px; /* Adds space to the left of the text section */
   margin-left: 100px;
+}
+
+/* Small devices (phones, less than 600px) */
+@media only screen and (max-width: 600px) {
+  .textSection {
+    /* Smaller margins for mobile devices */
+    margin-right: 30px;
+    margin-left: 30px;
+  }
 }
 
 .textSection h1 {

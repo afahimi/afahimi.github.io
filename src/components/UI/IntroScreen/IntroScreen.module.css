@@ -11,6 +11,18 @@
     transform: scale(1.05); /* Minimal hover effect */
   }
 
+  /* Small devices (phones, less than 600px) */
+@media only screen and (max-width: 600px) {
+  .profilePic {
+    /* Scale down image size for small devices */
+    width: 200px; 
+    height: 200px;
+    /* If you want to center the image on small devices */
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
   .verticalLine {
     border-left: 2px solid #A9CAD2; /* Darker variant of navbar color */
     height: 80%; /* Adjust height as needed */

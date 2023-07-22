@@ -8,9 +8,11 @@ const NavBar = () => {
   return (
     <div>
       <header>
+      <div className={classes.btnGroup}>
         <Link to="/"> {/* Wraps the Logo component with a Link to the home page */}
           <Logo />
         </Link>
+        </div>
         <nav>
           <ul className={classes.navList}>
             <li>
