@@ -1,5 +1,5 @@
 import React from "react";
-import { Link } from 'react-router-dom';
+import { Link } from "react-router-dom";
 import Logo from "../Elements/Logo/Logo";
 import classes from "./NavBar.module.css";
 import Btn from "../Elements/Btn/Btn";
@@ -8,25 +8,37 @@ const NavBar = () => {
   return (
     <div>
       <header>
-      <div className={classes.btnGroup}>
-        <Link to="/"> {/* Wraps the Logo component with a Link to the home page */}
-          <Logo />
-        </Link>
+        <div className={classes.btnGroup}>
+          <Link to="/">
+            {" "}
+            {/* Wraps the Logo component with a Link to the home page */}
+            <Logo />
+          </Link>
         </div>
         <nav>
           <ul className={classes.navList}>
             <li>
-              <Link to="/projects"><Btn value="Projects" /></Link>
+              <Link to="/projects">
+                <Btn value="Projects" />
+              </Link>
             </li>
             <li>
-              <Link to="/notes"><Btn value="Notes" /></Link>
+              <Link to="/notes">
+                <Btn value="Notes" />
+              </Link>
             </li>
             <li>
-              <Link to="/blog"><Btn value="Blog" /></Link>
+              <Link to="/blog">
+                <Btn value="Blog" />
+              </Link>
+            </li>
+            <li>
+              <Link to="/contact">
+                <Btn value="Contact" />
+              </Link>
             </li>
           </ul>
         </nav>
-        <Link to='/contact'><Btn value="Contact" /></Link>
       </header>
     </div>
   );
