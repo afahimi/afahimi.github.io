@@ -1,7 +1,7 @@
 import React from "react";
 import AboutPanel from "../AboutPanel/AboutPanel";
 import classes from "./IntroScreen.module.css";
-import pfp from "../images/pfp.jpeg";
+import pfp from "../images/pfp3.png";
 import Btn from "../Elements/Btn/Btn";
 
 const IntroScreen = () => {
