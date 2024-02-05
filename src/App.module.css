@@ -1,36 +1,5 @@
-/* Extra large devices (large desktops, 1200px and up) */
-@media only screen and (min-width: 1800px) {
-  body {
-    zoom: 1.6; /* Zoom level for extra large devices */
-  }
-}
-
-/* Extra large devices (large desktops, 1200px and up) */
-@media only screen and (min-width: 1400px) and (max-width: 1799px) {
-  body {
-    zoom: 1.25; /* Zoom level for extra large devices */
-  }
-}
-
-/* Large devices (desktops, 992px and up) */
-@media only screen and (min-width: 992px) and (max-width: 1199px) {
-  body {
-    zoom: 1.0; /* Zoom level for large devices */
-  }
-}
-
-/* Medium devices (tablets, 768px and up) */
-@media only screen and (min-width: 768px) and (max-width: 991px) {
-  body {
-    zoom: 0.75; /* Zoom level for medium devices */
-  }
-}
-
-/* Small devices (phones, less than 768px) */
-@media only screen and (max-width: 767px) {
-  body {
-    zoom: 0.5; /* Zoom level for small devices */
-  }
+body {
+  zoom: 1.5; /* Zoom level for medium devices */
 }
 
 
@@ -44,10 +13,10 @@
   margin: 0 auto;
 }
 
-/* This will apply when the screen width is below 600px */
+/* This will apply when the screen width is below 600px
 @media screen and (max-width: 600px) {
   .container {
     width: 95%;
   }
-}
+} */
 /* #d0e8fd; */

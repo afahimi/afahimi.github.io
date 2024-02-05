@@ -10,6 +10,7 @@ import Projects from "./components/pages/Projects/Projects";
 import Notes from "./components/pages/Notes/Notes";
 import Blog from "./components/pages/Blog/Blog";
 import Contact from "./components/pages/Contact/Contact";
+import './index.css';
 
 /*
 Azure: F0FFFF

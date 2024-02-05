@@ -4,13 +4,6 @@
     padding: 0;
 }
 
-@media only screen and (max-width: 600px) {
-    .btnGroup {
-      /* Reduce padding and font size on small screens */
-      margin-left: 1px
-    }
-  }
-
 li, a {
     font-family: 'Inter', sans-serif;
     font-weight: 500;
@@ -38,5 +31,9 @@ header {
 
 .navList li a {
     transition: all 0.3s ease 0s;
+}
+
+.menuItems {
+    @apply border-transparent bg-custom-blue hover:bg-custom-blue-hover mt-2 self-center transition ease-in-out w-4/5 text-white font-medium py-2 rounded-sm;
 }
 

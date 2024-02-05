@@ -2,9 +2,9 @@ import React from "react";
 import signatureImage from "../../images/signature.png"
 import classes from "./Logo.module.css";
 
-const Logo = () => {
+const Logo = ({className}) => {
   return (
-    <button className={classes.logoButton}>
+    <button className={`${classes.logoButton} ${className}`}>
       <img src={signatureImage} alt="Signature" className={classes.logoImage}/>
     </button>
   );
