@@ -52,7 +52,7 @@ const NavBar = () => {
               )}
               <div className="flex flex-row">
                 <aside
-                  className={`h-screen w-2/3 md:w-1/4 bg-custom-light-blue fixed right-0 z-50 flex flex-col transition-all duration-500 ease-in-out transform ${
+                  className={`rounded-l-xl h-screen w-2/3 md:w-1/4 bg-custom-light-blue fixed right-0 z-50 flex flex-col transition-all duration-500 ease-in-out transform ${
                     showMenu ? "translate-x-0" : "translate-x-full"
                   }`}
                 >
