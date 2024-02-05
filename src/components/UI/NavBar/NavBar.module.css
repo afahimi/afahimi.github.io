@@ -4,14 +4,6 @@
     padding: 0;
 }
 
-li, a {
-    font-family: 'Inter', sans-serif;
-    font-weight: 500;
-    font-size: 16px;
-    color: #edf0f1;
-    text-decoration: none;
-}
-
 header {
     display: flex;
     justify-content: space-between;
