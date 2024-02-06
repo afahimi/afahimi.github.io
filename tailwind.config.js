@@ -10,6 +10,7 @@ module.exports = {
         'custom-light-blue': '#daeff5',
         'custom-blue-bg': '#CCE0E5',
         'custom-blue-hover': '#7FA6AC',
+        'custom-blue-lt': '#f5faff',
       }
     },
   },

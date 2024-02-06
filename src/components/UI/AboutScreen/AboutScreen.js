@@ -7,13 +7,13 @@ import TextContainer from "../Elements/TextContainer/TextContainer";
 import SocialLinks from "../SocialLinks/SocialLinks";
 const AboutScreen = (props) => {
   return (
-    <AboutPanel backgroundColor={props.backgroundColor}>
-      <div className={classes.bubbleWrapper}>
+    <AboutPanel backgroundColor={props.backgroundColor} className={`h-auto py-9`}>
+      <div className={`${classes.bubbleWrapper}`}>
         <Bubble>About Me</Bubble>
       </div>
-      <div className={classes.verticalLine} />
-      <div className={classes.textSectionContainer}>
-        <TextContainer>
+      <div className={`hidden xl:block ${classes.customBorder} h-4/5`} />
+      <div className={`${classes.textSectionContainer} flex flex-col lg:flex-row lg:gap-8`}>
+        <TextContainer className="self-center mx-10 lg:mx-0 my-5">
           <P className={classes.textSection}>
             I'm a third year computer engineering student at the University of
             British Columbia. I have a strong passion for both hardware and
@@ -36,7 +36,7 @@ const AboutScreen = (props) => {
             hope you enjoy browsing my website!
           </P>
         </TextContainer>
-        <div className={classes.links_container}>
+        <div className="self-center lg:mr-24">
           <SocialLinks />
         </div>
       </div>

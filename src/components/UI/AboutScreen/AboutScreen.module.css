@@ -1,5 +1,4 @@
 .bubbleWrapper,
-/* .verticalLineWrapper, */
 .textSectionContainer {
   flex: 1;
   display: flex;
@@ -11,10 +10,15 @@
   background: #f5faff;
   width: 2px !important;
   height: 80%;
-  /* flex: 1; */
-  /* display: flex;
-  justify-content: center;
-  align-items: center; */
+}
+
+.panel {
+  height: 500px;
+}
+
+.customBorder {
+  width: 2.5px;
+  background: #f5faff !important;
 }
 
 .textSection {
@@ -22,24 +26,18 @@
 }
 
 .textSectionContainer {
-  margin-left: 35px;
-  margin-right: 80px;
-  max-width: 600px; /* Adjusted for wider text */
-  padding: 20px; /* Adjusted for smaller padding */
+  max-width: 600px;
+  padding: 20px;
   display: flex;
   align-items: center;
   justify-content: center;
-}
-
-.links_container {
-  margin-left: 50px;
 }
 
 .container {
   display: flex;
   align-items: center;
   justify-content: center;
-  height: 100%; /* Adjust as needed */
+  height: 100%;
 }
 
 

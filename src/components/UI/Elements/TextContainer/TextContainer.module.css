@@ -20,6 +20,6 @@
 /* Small devices (phones, less than 600px) */
 @media only screen and (max-width: 600px) {
   .container {
-    font-size: 8px !important; /* Adjust font-size relative to viewport width for mobile */
+    font-size: 11px !important; /* Adjust font-size relative to viewport width for mobile */
   }
 }

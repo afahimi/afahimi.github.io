@@ -7,7 +7,7 @@ const AboutPanel = (props) => {
   };
 
   return (
-    <div className={`${classes.panel} flex xl:justify-between flex-col xl:flex-row justify-center items-center w-full`} style={panelStyle}>
+    <div className={`${classes.panel} flex xl:justify-between flex-col xl:flex-row justify-center items-center w-full ${props.className}`} style={panelStyle}>
       {props.children}
     </div>
   );
