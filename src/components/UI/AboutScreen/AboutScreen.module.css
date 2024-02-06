@@ -7,7 +7,7 @@
 }
 
 .verticalLine {
-  background: #f5faff;
+  background-color: #f5faff;
   width: 2px !important;
   height: 80%;
 }
@@ -17,8 +17,8 @@
 }
 
 .customBorder {
-  width: 2.5px;
-  background: #f5faff !important;
+  border-left: 0.5px;
+  height: 450px;
 }
 
 .textSection {

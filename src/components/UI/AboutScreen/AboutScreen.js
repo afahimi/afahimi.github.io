@@ -11,7 +11,7 @@ const AboutScreen = (props) => {
       <div className={`${classes.bubbleWrapper}`}>
         <Bubble>About Me</Bubble>
       </div>
-      <div className={`hidden xl:block ${classes.customBorder} h-4/5`} />
+      <div className={`hidden xl:block ${classes.customBorder} border-custom-blue-lt border-solid mr-8`} />
       <div className={`${classes.textSectionContainer} flex flex-col lg:flex-row lg:gap-8`}>
         <TextContainer className="self-center mx-10 lg:mx-0 my-5">
           <P className={classes.textSection}>
