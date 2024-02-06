@@ -1,15 +1,6 @@
 .profilePic {
-    width: 350px; /* Adjust size as needed */
-    height: 350px;
-    border-radius: 10%; /* Slight border rounding */
     box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.25); /* Shadow effect */
-    transition: transform 0.3s ease-in-out; /* Transition for hover effect */
-    margin-left: 130px;
 }
-  
-  .profilePic:hover {
-    transform: scale(1.05); /* Minimal hover effect */
-  }
 
   /* Small devices (phones, less than 600px) */
 @media only screen and (max-width: 600px) {
@@ -23,10 +14,8 @@
   }
 }
 
-  .verticalLine {
-    border-left: 2px solid #A9CAD2; /* Darker variant of navbar color */
-    height: 80%; /* Adjust height as needed */
-    margin: 0 10px; /* Space around the line */
+  .customBorder {
+    border-left: 2px;
   }
 
   .textSection {
@@ -60,10 +49,4 @@
   @keyframes blink-caret {
     from, to { border-color: transparent }
     50% { border-color: rgb(0, 0, 0); }
-  }
-
-
-  .btnContainer {
-    margin-top: 20px;
-    margin-left: 65px;
   }

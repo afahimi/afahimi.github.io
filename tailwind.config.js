@@ -8,6 +8,7 @@ module.exports = {
       colors: {
         'custom-blue': '#A9CAD2',
         'custom-light-blue': '#daeff5',
+        'custom-blue-bg': '#CCE0E5',
         'custom-blue-hover': '#7FA6AC',
       }
     },

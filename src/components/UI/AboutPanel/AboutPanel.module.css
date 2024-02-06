@@ -1,8 +1,3 @@
 .panel {
-  display: flex; /* New */
-  justify-content: space-between;  /* Adjusted from 'center' to 'space-between' */
-  align-items: center; /* New */
-  background-color: #f5faff; /* Very light azure */
-  width: 100%;
   height: 500px; /* Adjust this as needed */
 }
