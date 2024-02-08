@@ -62,29 +62,29 @@ const ProjectItem = (props) => {
   );
 
   return (
-    <AboutPanel backgroundColor={props.backgroundColor}>
+    <AboutPanel backgroundColor={props.backgroundColor} auto={true}>
       {props.right === true ? (
         <>
           <img
             src={props.img}
             alt="Project IMG"
-            className={classes.profilePic}
+            className={`${classes.profilePic} my-4`}
           />
-          <div className={classes.verticalLine} />
-          <div className={classes.textSection}>
+          <div className={`${classes.verticalLine} h-80 hidden xl:block`} />
+          <div className={`${classes.textSection} my-4`}>
             <TextContainer>{content}</TextContainer>
           </div>
         </>
       ) : (
         <>
-          <div className={classes.textSection}>
+          <div className={`${classes.textSection} my-4`}>
             <TextContainer>{content}</TextContainer>
           </div>
-          <div className={classes.verticalLine} />
+          <div className={`${classes.verticalLine} h-80 hidden xl:block`} />
           <img
             src={props.img}
             alt="Project IMG"
-            className={classes.profilePic}
+            className={`${classes.profilePic} my-4`}
           />
         </>
       )}
