@@ -32,7 +32,7 @@ const NavBar = () => {
               </Link>
             </li> */}
             <li>
-              <Link to="/blog">
+              <Link to="/experience">
                 <Btn value="Experience" />
               </Link>
             </li>
@@ -69,7 +69,7 @@ const NavBar = () => {
                       </Link>
                     </button>
                     <button className={classes.menuItems} onClick={() => setShowMenu(false)}>
-                      <Link to="/blog">
+                      <Link to="/experience">
                         Experience
                       </Link>
                     </button>

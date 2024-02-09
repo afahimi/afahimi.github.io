@@ -11,6 +11,7 @@ module.exports = {
         'custom-blue-bg': '#CCE0E5',
         'custom-blue-hover': '#7FA6AC',
         'custom-blue-lt': '#f5faff',
+        'custom-blue-item': '#b2d4e1',
       },
       spacing: {
         '150': '150px',

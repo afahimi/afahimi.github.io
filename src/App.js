@@ -8,7 +8,7 @@ import AboutScreen from "./components/UI/AboutScreen/AboutScreen";
 import Footer from "./components/UI/Footer/Footer";
 import Projects from "./components/pages/Projects/Projects";
 import Notes from "./components/pages/Notes/Notes";
-import Blog from "./components/pages/Blog/Blog";
+import Experience from "./components/pages/Experience/Experience";
 import Contact from "./components/pages/Contact/Contact";
 import './index.css';
 
@@ -31,7 +31,7 @@ const App = () => {
         <Routes>
           <Route path="/projects" element={<Projects />} />
           <Route path="/notes" element={<Notes />} />
-          <Route path="/blog" element={<Blog />} />
+          <Route path="/experience" element={<Experience />} />
           <Route path="/contact" element={<Contact />} />
           <Route path="/" element={
             <>
