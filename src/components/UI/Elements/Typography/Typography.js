@@ -3,7 +3,7 @@ import classes from './Typography.module.css';
 
 export const H1 = (props) => {
     return (
-        <h1 className={classes.h1}>
+        <h1 className={`${classes.h1} ${classes.className}`}>
             {props.children}
         </h1>
     );

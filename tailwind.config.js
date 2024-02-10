@@ -15,7 +15,13 @@ module.exports = {
       },
       spacing: {
         '150': '150px',
-      }
+      },
+      fontFamily: {
+        'inter': ['Inter', 'sans-serif'],
+      },
+      fontSize: {
+        'sdm': '1.5rem',
+      },
     },
   },
   plugins: [],
