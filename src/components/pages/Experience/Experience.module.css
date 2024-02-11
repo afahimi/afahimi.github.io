@@ -1,0 +1,11 @@
+.border {
+    border-width: 3px;
+    border-style: solid;
+    border-color: transparent;
+    transition: border-color 0.3s ease-in-out;
+}
+
+.border:hover {
+    --tw-bg-opacity: 1;
+    border-color: rgb(59 130 246 / var(--tw-bg-opacity));
+}
