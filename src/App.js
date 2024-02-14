@@ -1,7 +1,7 @@
 import React from "react";
 import NavBar from "./components/UI/NavBar/NavBar";
 import classes from "./App.module.css";
-import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
+import { HashRouter, Route, Routes } from "react-router-dom";
 import AboutPanel from "./components/UI/AboutPanel/AboutPanel";
 import IntroScreen from "./components/UI/IntroScreen/IntroScreen";
 import AboutScreen from "./components/UI/AboutScreen/AboutScreen";
@@ -26,7 +26,7 @@ About Panel 2: B2D4E1
 const App = () => {
   return (
     <div className={`${classes.global} ${classes.container}`}>
-      <Router>
+      <HashRouter>
         <NavBar />
         <Routes>
           <Route path="/projects" element={<Projects />} />
@@ -41,7 +41,7 @@ const App = () => {
           } />
         </Routes>
         <Footer />
-      </Router>
+      </HashRouter>
     </div>
   );
 };
