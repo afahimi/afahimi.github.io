@@ -57,7 +57,7 @@ const Experience = () => {
 
   return (
     <>
-      <div className={`flex flex-col items-center h-screen py-5 gap-5`}>
+      <div className={`flex flex-col items-center h-auto xl:h-screen py-5 gap-5`}>
         {experiences.map((experience) => (
           <ExperienceListing
             name={experience.name}
