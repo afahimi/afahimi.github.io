@@ -1,5 +1,16 @@
 export const ProjectList = [
   {
+    title: "MyGameManager",
+    context: "Videogame Database Project",
+    img: process.env.PUBLIC_URL + "/Images/ProjectImages/gamemanager.png",
+    date: "September 2023 - December 2023", 
+    location: "Vancouver, BC", 
+    description: "MyGameManager is a survival videogame database management tool. It features a React.js front-end for dynamic user interactions, a PHP backend with a RESTful API, and leverages an Oracle DB for structured storage of game data, including characters, quests, and inventories. ",
+    keywords: ["React.js", "TypeScript", "Oracle DB", "SQL", "PHP", "RESTful API"],
+    hasref: true, 
+    href: "https://github.com/afahimi/MyGameManager" 
+},
+  {
     title: "IntelliFeeder",
     context: "Computer Engineering Design Project",
     img: process.env.PUBLIC_URL + "/Images/ProjectImages/IntelliFeeder.jpg",
