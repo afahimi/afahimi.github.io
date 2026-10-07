@@ -1,11 +1,9 @@
 import React, { useRef, useState } from "react";
 import emailjs from "@emailjs/browser";
-import { FaEnvelope, FaGithub, FaLinkedin, FaInstagram } from "react-icons/fa";
+import { FaGithub, FaLinkedin, FaInstagram } from "react-icons/fa";
 import Reveal from "../ui/Reveal";
 import SectionHeading from "../ui/SectionHeading";
 import Button from "../ui/Button";
-
-const EMAIL = "amin.f1000@gmail.com";
 
 const socials = [
   { href: "https://github.com/afahimi", label: "GitHub", Icon: FaGithub },
@@ -45,11 +43,8 @@ const Contact = () => {
         <Reveal className="space-y-6">
           <h3 className="text-step-2">Get in touch</h3>
           <p className="max-w-md text-muted">
-            Have a question, an idea, or just want to say hi? Send a message, or reach out directly.
+            Have a question, an idea, or just want to say hi? Send me a message here, or find me on socials.
           </p>
-          <Button href={`mailto:${EMAIL}`}>
-            <FaEnvelope aria-hidden /> Say hello
-          </Button>
           <ul className="flex gap-3 pt-2">
             {socials.map(({ href, label, Icon }) => (
               <li key={label}>
@@ -98,7 +93,7 @@ const Contact = () => {
                 {status === "success" && <span className="text-accent">Thanks! Your message is on its way.</span>}
                 {status === "error" && (
                   <span className="text-muted">
-                    Something went wrong. Please try again or email {EMAIL}.
+                    Something went wrong. Please try again, or reach out on socials.
                   </span>
                 )}
               </p>
