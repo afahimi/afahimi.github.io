@@ -1,0 +1,5 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 500"><rect width="800" height="500" fill="#cce0e5"/>
+<rect x="100" y="60" width="600" height="380" rx="24" fill="#17262b"/><rect x="100" y="60" width="600" height="44" rx="24" fill="#35636d"/><rect x="100" y="84" width="600" height="20" fill="#35636d"/>
+<g><circle cx="130" cy="82" r="7" fill="#a9cad2"/><circle cx="152" cy="82" r="7" fill="#a9cad2"/><circle cx="174" cy="82" r="7" fill="#a9cad2"/></g>
+<g font-family="ui-monospace,Menlo,Consolas,monospace" font-size="30" fill="#a9cad2"><text x="140" y="160" fill="#7fc4d1">$ ls</text><text x="140" y="206">src  bin  Makefile</text><text x="140" y="262" fill="#7fc4d1">$ cat log | grep fork</text><text x="140" y="308">child 4821 started</text><text x="140" y="354" fill="#7fc4d1">$ <tspan fill="#f5faff">_</tspan></text></g>
+</svg>

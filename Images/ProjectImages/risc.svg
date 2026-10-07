@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 500"><rect width="800" height="500" fill="#cce0e5"/>
+<g transform="translate(250 90)"><rect width="300" height="300" rx="26" fill="#3f6e78"/><rect x="60" y="60" width="180" height="180" rx="16" fill="#7fa6ac"/><rect x="95" y="95" width="110" height="110" rx="12" fill="#f5faff"/><text x="150" y="162" font-family="ui-monospace,Menlo,monospace" font-size="34" font-weight="700" fill="#3f6e78" text-anchor="middle">CPU</text>
+<g stroke="#3f6e78" stroke-width="10" stroke-linecap="round"><path d="M60-26v26M110-26v26M160-26v26M210-26v26M260-26v26M60 300v26M110 300v26M160 300v26M210 300v26M260 300v26M-26 60h26M-26 110h26M-26 160h26M-26 210h26M-26 260h26M300 60h26M300 110h26M300 160h26M300 210h26M300 260h26"/></g></g>
+<g transform="translate(35 420)" fill="#f5faff"><rect width="130" height="44" rx="12"/><rect x="150" width="130" height="44" rx="12"/><rect x="300" width="130" height="44" rx="12"/><rect x="450" width="130" height="44" rx="12"/><rect x="600" width="130" height="44" rx="12"/></g>
+<g transform="translate(35 420)" fill="#3f6e78"><rect x="14" y="16" width="60" height="12" rx="6"/><rect x="164" y="16" width="60" height="12" rx="6"/><rect x="314" y="16" width="60" height="12" rx="6"/><rect x="464" y="16" width="60" height="12" rx="6"/><rect x="614" y="16" width="60" height="12" rx="6"/></g>
+</svg>
