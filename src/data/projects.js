@@ -1,5 +1,8 @@
 const img = (file) => `${process.env.PUBLIC_URL}/Images/ProjectImages/${file}`;
 
+// Set SHOW_IMAGES to true to bring back the real cover images (the files are still in public/).
+const SHOW_IMAGES = false;
+
 // Entries without `img` render a letter tile. `href` is optional; `fit: "contain"` keeps logos uncropped.
 const projects = [
   {
@@ -160,4 +163,6 @@ const projects = [
   },
 ];
 
-export default projects;
+export default SHOW_IMAGES
+  ? projects
+  : projects.map(({ img: _img, fit: _fit, ...rest }) => rest);

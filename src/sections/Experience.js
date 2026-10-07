@@ -55,11 +55,7 @@ const Experience = () => (
                     </p>
                   </div>
                 </div>
-                <ul className="mt-5 list-disc space-y-2 pl-5 marker:text-accent">
-                  {job.bullets.map((b) => (
-                    <li key={b}>{b}</li>
-                  ))}
-                </ul>
+                <p className="mt-5 text-step-0">{job.blurb}</p>
                 <div className="mt-5 flex flex-wrap gap-2">
                   {job.skills.map((s) => (
                     <Chip key={s}>{s}</Chip>
