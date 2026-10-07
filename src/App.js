@@ -1,7 +1,8 @@
 import React, { useEffect } from "react";
-import { MotionConfig } from "framer-motion";
+import { MotionConfig, useReducedMotion } from "framer-motion";
 import useTheme from "./hooks/useTheme";
 import useActiveSection from "./hooks/useActiveSection";
+import useScrollLaunch from "./hooks/useScrollLaunch";
 import NavBar from "./sections/NavBar";
 import Hero from "./sections/Hero";
 import About from "./sections/About";
@@ -16,6 +17,8 @@ const SECTIONS = ["home", "experience", "projects", "contact"];
 const App = () => {
   const [theme, toggleTheme] = useTheme();
   const active = useActiveSection(SECTIONS);
+  const reduceMotion = useReducedMotion();
+  useScrollLaunch(!reduceMotion);
 
   // Old hash-router links such as #/projects land on the matching section.
   useEffect(() => {

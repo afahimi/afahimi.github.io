@@ -36,7 +36,7 @@ const Hero = () => {
             key={i}
             className="absolute rounded-full bg-accent-soft opacity-40"
             style={{ width: b.size, height: b.size, top: b.top, left: b.left }}
-            animate={{ y: [0, -14, 0] }}
+            animate={{ y: [0, -38, 0], x: [0, i % 2 ? -22 : 22, 0] }}
             transition={{ duration: b.dur, repeat: Infinity, ease: "easeInOut", delay: i * 0.6 }}
           />
         ))}
