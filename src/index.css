@@ -1,3 +1,90 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+/* Theme tokens. Light keeps the original azure palette; dark is near-black with magenta. */
+:root,
+:root[data-theme="light"] {
+  --bg: #f0ffff;
+  --band: #cce0e5;
+  --surface: #f5faff;
+  --line: #b2d4e1;
+  --ink: #17262b;
+  --muted: #4b6269;
+  --accent: #35636d;
+  --accent-strong: #3f6e78;
+  --accent-soft: #a9cad2;
+  --on-accent: #ffffff;
+  --shadow: rgba(23, 38, 43, 0.14);
+  color-scheme: light;
+}
+
+:root[data-theme="dark"] {
+  --bg: #0d0b10;
+  --band: #130f17;
+  --surface: #17131c;
+  --line: #2b2333;
+  --ink: #efe9f2;
+  --muted: #a99fb3;
+  --accent: #f060b0;
+  --accent-strong: #b01e74;
+  --accent-soft: #4a1b38;
+  --on-accent: #ffffff;
+  --shadow: rgba(0, 0, 0, 0.5);
+  color-scheme: dark;
+}
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+    -webkit-text-size-adjust: 100%;
+  }
+
+  body {
+    background-color: var(--bg);
+    color: var(--ink);
+    font-family: Inter, system-ui, sans-serif;
+    font-size: clamp(1rem, 0.96rem + 0.2vw, 1.125rem);
+    line-height: 1.7;
+    -webkit-font-smoothing: antialiased;
+    transition: background-color 0.4s ease, color 0.4s ease;
+  }
+
+  /* Smooth the theme swap on the surfaces that change color. */
+  header,
+  section,
+  footer,
+  .themed {
+    transition: background-color 0.4s ease, border-color 0.4s ease, color 0.4s ease;
+  }
+
+  h1,
+  h2,
+  h3 {
+    font-family: Fraunces, Georgia, serif;
+    font-weight: 500;
+    letter-spacing: -0.01em;
+  }
+
+  :focus-visible {
+    outline: 2px solid var(--accent);
+    outline-offset: 3px;
+    border-radius: 6px;
+  }
+
+  ::selection {
+    background: var(--accent-soft);
+    color: var(--ink);
+  }
+
+  @media (prefers-reduced-motion: reduce) {
+    html {
+      scroll-behavior: auto;
+    }
+  }
+}
+
+/* Anchored sections clear the sticky nav. */
+section[id] {
+  scroll-margin-top: 4.5rem;
+}

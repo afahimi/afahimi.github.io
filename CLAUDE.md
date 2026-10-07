@@ -15,13 +15,15 @@ Personal portfolio site (React 18, Create React App via `react-scripts`), deploy
 
 ## Architecture
 
-- `src/App.js` wraps everything in a `HashRouter` (hash routing is deliberate, so GitHub Pages needs no server rewrites). `NavBar` and `Footer` are persistent; routes are `/` (IntroScreen + AboutScreen), `/projects`, `/notes`, `/experience`, `/contact`.
-- `src/components/UI/` holds the home-page sections and shared pieces (NavBar, Footer, SocialLinks, and reusable `Elements/` such as Btn, Bubble, PhotoCard, TextContainer, Typography). `src/components/pages/` holds one folder per route.
-- Content is data-driven: projects come from `pages/Projects/ProjectList.js` (array of objects: title, context, img, date, location, description, keywords, hasref/href); experience from `pages/Experience/ExperienceListing.js`.
-- Contact form (`pages/Contact/Components/ContactForm.js`) sends mail through `@emailjs/browser`.
-- Static assets live in `public/` (`Images/ProjectImages/`, `Amin_Resume.pdf`). Reference them with `process.env.PUBLIC_URL + "/Images/..."` — note that some entries in `ProjectList.js` omit the leading slash, which is inconsistent.
+- `src/App.js` renders one scrolling page: `NavBar`, then the sections `Hero` (id `home`), `About`, `Experience`, `Projects`, `Contact`, then `Footer`. There is no router. The nav uses `#section` anchors, `useActiveSection` (IntersectionObserver) drives the highlight and keeps the URL hash in sync, and old `#/projects`-style links are mapped to sections.
+- `src/sections/` holds each page section; `src/ui/` holds shared pieces (Button, Chip, Reveal, SectionHeading, ThemeToggle); `src/hooks/` holds `useTheme` and `useActiveSection`.
+- Content is data-driven: projects live in `src/data/projects.js` (entries without `img` render a placeholder tile; `href` and `fit: "contain"` are optional) and experience in `src/data/experience.js` (`upcoming: true` renders the dashed "next up" node).
+- Styling is Tailwind plus CSS variables. Theme tokens (light azure, dark near-black/magenta) are defined once in `src/index.css` and mapped to Tailwind colors in `tailwind.config.js`. Dark mode is `data-theme="dark"` on `<html>`, set before first paint by an inline script in `public/index.html` and toggled by `useTheme` (system setting until the visitor picks one). Animation uses Framer Motion; `MotionConfig reducedMotion="user"` in `App.js` honors reduced-motion.
+- Contact form (`sections/Contact.js`) sends mail through `@emailjs/browser`, with a honeypot field. The destination inbox is configured in the EmailJS dashboard, not in the repo.
+- Static assets live in `public/` (`Images/ProjectImages/` are pre-compressed to about 1200px wide). Reference them with `process.env.PUBLIC_URL + "/Images/..."`.
+- `src/components/` is the old multi-page UI and is no longer imported; it can be deleted.
 
 ## Gotchas
 
 - `build/` is committed to git (the `main` branch tracks build output), so builds produce noisy diffs with hashed filenames; the deployed copy is on the `gh-pages` branch.
-- Theme colors are defined in two places: the comment block in `App.js` and `tailwind.config.js`.
+- Do not reintroduce `zoom` or global resets in CSS modules; the old `body { zoom: 1.5 }` hack is gone.
