@@ -2,7 +2,7 @@
 @tailwind components;
 @tailwind utilities;
 
-/* Theme tokens. Light keeps the original azure palette; dark is near-black with magenta. */
+/* Theme tokens. Light (the default) keeps the original azure palette; dark is a deep teal-ink take on it. */
 :root,
 :root[data-theme="light"] {
   --bg: #f0ffff;
@@ -20,15 +20,15 @@
 }
 
 :root[data-theme="dark"] {
-  --bg: #0d0b10;
-  --band: #130f17;
-  --surface: #17131c;
-  --line: #2b2333;
-  --ink: #efe9f2;
-  --muted: #a99fb3;
-  --accent: #f060b0;
-  --accent-strong: #b01e74;
-  --accent-soft: #4a1b38;
+  --bg: #0c1417;
+  --band: #101c20;
+  --surface: #142226;
+  --line: #243b42;
+  --ink: #e6f1f3;
+  --muted: #93aeb4;
+  --accent: #86c7d4;
+  --accent-strong: #3f6e78;
+  --accent-soft: #1f3a42;
   --on-accent: #ffffff;
   --shadow: rgba(0, 0, 0, 0.5);
   color-scheme: dark;

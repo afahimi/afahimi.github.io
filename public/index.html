@@ -19,14 +19,11 @@
       rel="stylesheet"
     />
 
-    <!-- Set the theme before first paint to avoid a flash. -->
+    <!-- Light by default; dark only if the visitor chose it. Set before first paint to avoid a flash. -->
     <script>
       (function () {
         try {
-          var stored = localStorage.getItem("theme");
-          var dark = stored
-            ? stored === "dark"
-            : window.matchMedia("(prefers-color-scheme: dark)").matches;
+          var dark = localStorage.getItem("theme") === "dark";
           document.documentElement.setAttribute("data-theme", dark ? "dark" : "light");
         } catch (e) {}
       })();

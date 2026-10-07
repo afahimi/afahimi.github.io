@@ -25,7 +25,7 @@ const Logo = ({ company, logo }) =>
 
 const Experience = () => (
   <section id="experience" className="mx-auto max-w-page px-5 py-20 md:px-8 md:py-28">
-    <SectionHeading eyebrow="Where I've worked" title="Experience" />
+    <SectionHeading title="Experience" />
 
     <ol className="relative ml-3 border-l border-line md:ml-4">
       {experience.map((job) => (
@@ -41,10 +41,7 @@ const Experience = () => (
           <Reveal>
             {job.upcoming ? (
               <div className="rounded-2xl border border-dashed border-accent/60 px-6 py-5">
-                <p className="text-sm font-medium uppercase tracking-[0.18em] text-accent">
-                  {job.company}
-                </p>
-                <h3 className="mt-1 text-step-2">{job.role}</h3>
+                <h3 className="text-step-2">{job.role}</h3>
               </div>
             ) : (
               <article className="themed rounded-2xl border border-line bg-surface p-6 shadow-soft md:p-8">

@@ -1,10 +1,11 @@
 const img = (file) => `${process.env.PUBLIC_URL}/Images/ProjectImages/${file}`;
 
-// Entries without `img` render a placeholder tile. `href` is optional; `fit: "contain"` keeps logos uncropped.
+// Entries without `img` render a letter tile. `href` is optional; `fit: "contain"` keeps logos uncropped.
 const projects = [
   {
     title: "Flow",
     context: "Microsoft Intern Hackathon 2025",
+    img: img("flow.svg"),
     description:
       "Flow is an AI meeting engagement assistant for Teams. A native Electron app monitors a Teams meeting and delivers AI-generated quizzes when users disengage, streaming transcripts through Azure Cognitive Services and GPT-4 for instant feedback and explanation. It won “Best AI for Workplace Productivity” at Microsoft’s 2025 intern hackathon, topping 200+ projects.",
     keywords: ["Electron", "TypeScript", "Azure Cognitive Services", "GPT-4"],
@@ -12,6 +13,7 @@ const projects = [
   {
     title: "MyGamesList",
     context: "Video Game Tracking Platform",
+    img: img("mygameslist.svg"),
     description:
       "A platform for 70,000+ games, enabling users to review, rate, and manage personal game collections. It pairs an interactive React.js frontend styled with Tailwind CSS with a secure Express.js and MySQL backend that uses JWT authentication for sessions and data.",
     keywords: ["React.js", "Tailwind CSS", "TypeScript", "Express.js", "MySQL"],
@@ -19,6 +21,7 @@ const projects = [
   {
     title: "Autonomous Drone Mission System",
     context: "UBC Uncrewed Aircraft Systems",
+    img: img("drone.svg"),
     description:
       "A real-time Go flight controller for autonomous drones that streams telemetry and camera feeds via REST, paired with a low-latency Python UDP server that sustains sub-50 ms round-trip across autonomous flight. I led the 30-person software team, and the platform placed 2nd of 20 at the Canadian UAS nationals for mission accuracy.",
     keywords: ["Go", "Python", "UDP", "HTTP"],

@@ -59,15 +59,7 @@ const Hero = () => {
         </motion.div>
 
         <div className="text-center md:text-left">
-          <motion.p
-            initial={{ opacity: 0, y: 12 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ delay: 0.1, duration: 0.5 }}
-            className="text-sm font-medium uppercase tracking-[0.18em] text-accent"
-          >
-            Software engineer
-          </motion.p>
-          <h1 className="mt-3 text-step-4" aria-label={`\u{1F44B} ${GREETING}`}>
+          <h1 className="text-step-4" aria-label={`\u{1F44B} ${GREETING}`}>
             <span aria-hidden>
               <span className="mr-2">{"\u{1F44B}"}</span>
               {typed}

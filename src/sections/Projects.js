@@ -178,7 +178,7 @@ const Projects = () => {
   return (
     <section id="projects" className="themed border-y border-line" style={{ backgroundColor: "var(--band)" }}>
       <div className="mx-auto max-w-page px-5 py-20 md:px-8 md:py-28">
-        <SectionHeading eyebrow="Things I've built" title="Projects" />
+        <SectionHeading title="Projects" />
 
         <div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
           {visible.map((project, i) => (

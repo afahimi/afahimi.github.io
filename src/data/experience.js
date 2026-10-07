@@ -1,10 +1,9 @@
 const img = (file) => `${process.env.PUBLIC_URL}/Images/ProjectImages/${file}`;
 
-// `upcoming` renders the dashed "next up" node. `logo` falls back to a monogram tile.
+// `upcoming` renders the dashed placeholder node. `logo` falls back to a monogram tile.
 const experience = [
   {
     upcoming: true,
-    company: "Next up",
     role: "To be announced",
   },
   {
@@ -12,6 +11,7 @@ const experience = [
     role: "Software Engineer Intern",
     dates: "May 2025 - Aug 2025",
     location: "Redmond, WA",
+    logo: img("microsoft.svg"),
     bullets: [
       "Built and embedded a full-stack AI agent dashboard into Microsoft’s HR data platform, enabling 230,000+ employees to use natural-language commands for provisioning HR data resources more securely and efficiently.",
       "Developed a React.js frontend for the agent dashboard and integrated 12+ backend services via C#/.NET REST APIs, orchestrating access with Azure AD and Copilot workflows to streamline diagnostics.",
