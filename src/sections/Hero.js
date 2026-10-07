@@ -1,11 +1,10 @@
 import React, { useEffect, useState } from "react";
 import { motion, useReducedMotion } from "framer-motion";
 import pfp from "../assets/pfp.png";
-import Button from "../ui/Button";
 
 const GREETING = "Hello, I am Amin!";
 
-// Types the greeting once; the caret then stays put.
+// Types the greeting once; the caret keeps blinking afterwards.
 const useTypewriter = (text, enabled) => {
   const [count, setCount] = useState(enabled ? 0 : text.length);
   useEffect(() => {
@@ -42,7 +41,7 @@ const Hero = () => {
         ))}
       </div>
 
-      <div className="relative mx-auto grid max-w-page items-center gap-10 px-5 py-16 md:grid-cols-[auto_1fr] md:gap-16 md:px-8 md:py-24">
+      <div className="relative mx-auto grid max-w-page items-center gap-10 px-5 pt-16 pb-10 md:grid-cols-[auto_1fr] md:gap-16 md:px-8 md:pt-24 md:pb-14">
         <motion.div
           initial={{ opacity: 0, scale: 0.94 }}
           animate={{ opacity: 1, scale: 1 }}
@@ -63,7 +62,7 @@ const Hero = () => {
             <span aria-hidden>
               <span className="mr-2">{"\u{1F44B}"}</span>
               {typed}
-              <span className="ml-1 inline-block h-[0.85em] w-[3px] translate-y-[0.1em] bg-accent" />
+              <span className="caret ml-1 inline-block h-[0.85em] w-[3px] translate-y-[0.1em] bg-accent" />
             </span>
           </h1>
           <motion.p
@@ -74,14 +73,6 @@ const Hero = () => {
           >
             Welcome to my personal website.
           </motion.p>
-          <motion.div
-            initial={{ opacity: 0, y: 12 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ delay: 1.1, duration: 0.6 }}
-            className="mt-8"
-          >
-            <Button href="#projects">See my work</Button>
-          </motion.div>
         </div>
       </div>
     </section>

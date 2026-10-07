@@ -2,8 +2,8 @@ import React from "react";
 import Reveal from "../ui/Reveal";
 
 const About = () => (
-  <section id="about" className="themed border-y border-line" style={{ backgroundColor: "var(--band)" }}>
-    <div className="mx-auto grid max-w-page gap-8 px-5 py-16 md:grid-cols-[auto_1fr] md:gap-16 md:px-8 md:py-20">
+  <section id="about">
+    <div className="mx-auto grid max-w-page gap-8 px-5 pb-16 pt-6 md:grid-cols-[auto_1fr] md:gap-16 md:px-8 md:pb-24 md:pt-8">
       <Reveal>
         {/* The speech-bubble motif, kept as a quiet label. */}
         <div className="themed relative inline-block rounded-2xl border border-line bg-surface px-6 py-3 font-display text-step-2 shadow-soft after:absolute after:-bottom-2 after:left-8 after:h-4 after:w-4 after:rotate-45 after:border-b after:border-r after:border-line after:bg-surface after:content-['']">

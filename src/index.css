@@ -84,6 +84,22 @@
   }
 }
 
+.caret {
+  animation: caret-blink 1.05s steps(1) infinite;
+}
+
+@keyframes caret-blink {
+  50% {
+    opacity: 0;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .caret {
+    animation: none;
+  }
+}
+
 /* Anchored sections clear the sticky nav. */
 section[id] {
   scroll-margin-top: 4.5rem;
