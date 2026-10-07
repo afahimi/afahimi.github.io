@@ -10,7 +10,7 @@ const AboutPanel = ({ backgroundColor, auto = false, className, children }) => {
     <div
       className={`${auto ? "h-auto" : ""} ${
         auto ? `sm:${classes.panel}` : classes.panel
-      } flex xl:justify-between flex-col xl:flex-row justify-center items-center w-full ${className}`}
+      } flex xl:justify-evenly flex-col xl:flex-row justify-center items-center w-full ${className}`}
       style={panelStyle}
     >
       {children}
