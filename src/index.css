@@ -102,5 +102,21 @@
 
 /* Anchored sections clear the sticky nav. */
 section[id] {
-  scroll-margin-top: 4.5rem;
+  scroll-margin-top: 4rem;
+}
+
+/* Gentle snap between the first two screens only; proximity never fights the scroll. */
+html {
+  scroll-snap-type: y proximity;
+}
+
+#home,
+#about {
+  scroll-snap-align: start;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-snap-type: none;
+  }
 }

@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from "react";
 import { motion, useReducedMotion } from "framer-motion";
+import { FaChevronDown } from "react-icons/fa";
 import pfp from "../assets/pfp.png";
 
 const GREETING = "Hello, I am Amin!";
@@ -28,7 +29,7 @@ const Hero = () => {
   const typed = useTypewriter(GREETING, !reduce);
 
   return (
-    <section id="home" className="relative overflow-hidden">
+    <section id="home" className="relative flex min-h-[calc(100svh-4rem)] flex-col overflow-hidden">
       <div aria-hidden className="pointer-events-none absolute inset-0">
         {bubbles.map((b, i) => (
           <motion.span
@@ -41,7 +42,7 @@ const Hero = () => {
         ))}
       </div>
 
-      <div className="relative mx-auto grid max-w-page items-center gap-10 px-5 pt-16 pb-10 md:grid-cols-[auto_1fr] md:gap-16 md:px-8 md:pt-24 md:pb-14">
+      <div className="relative mx-auto grid w-full max-w-page flex-1 content-center items-center gap-10 px-5 py-10 md:grid-cols-[auto_1fr] md:gap-16 md:px-8">
         <motion.div
           initial={{ opacity: 0, scale: 0.94 }}
           animate={{ opacity: 1, scale: 1 }}
@@ -75,6 +76,22 @@ const Hero = () => {
           </motion.p>
         </div>
       </div>
+      <motion.a
+        href="#about"
+        aria-label="Scroll to About"
+        initial={{ opacity: 0 }}
+        animate={{ opacity: 1 }}
+        transition={{ delay: 1.6, duration: 0.6 }}
+        className="relative mx-auto mb-6 grid h-11 w-11 place-items-center rounded-full border border-line text-muted hover:border-accent hover:text-accent"
+      >
+        <motion.span
+          animate={{ y: [0, 5, 0] }}
+          transition={{ duration: 1.8, repeat: Infinity, ease: "easeInOut" }}
+          className="grid place-items-center"
+        >
+          <FaChevronDown aria-hidden />
+        </motion.span>
+      </motion.a>
     </section>
   );
 };
