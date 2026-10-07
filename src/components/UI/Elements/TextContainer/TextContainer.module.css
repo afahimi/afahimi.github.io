@@ -10,7 +10,7 @@
   transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out,
     border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
   transition: transform 0.3s ease-in-out; /* Transition for hover effect */
-  font-size: 14px; /* Default font-size relative to viewport width */
+  font-size: 16px;
 }
 
 .container:hover {
@@ -20,6 +20,6 @@
 /* Small devices (phones, less than 600px) */
 @media only screen and (max-width: 600px) {
   .container {
-    font-size: 11px !important; /* Adjust font-size relative to viewport width for mobile */
+    font-size: 13px;
   }
 }

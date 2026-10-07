@@ -1,0 +1,32 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 500">
+<rect width="800" height="500" fill="#cce0e5"/>
+<rect x="60" y="44" width="680" height="56" rx="16" fill="#f5faff"/><circle cx="92" cy="72" r="12" fill="#3f6e78"/><rect x="116" y="64" width="120" height="16" rx="8" fill="#17262b"/>
+<rect x="520" y="58" width="200" height="28" rx="14" fill="#cce0e5"/>
+<g>
+<g transform="translate(60 124)"><rect width="200" height="150" rx="14" fill="#3f6e78"/><rect y="150" width="200" height="0" fill="none"/></g>
+<g transform="translate(300 124)"><rect width="200" height="150" rx="14" fill="#a9cad2"/></g>
+<g transform="translate(540 124)"><rect width="200" height="150" rx="14" fill="#7fa6ac"/></g>
+<g transform="translate(60 300)"><rect width="200" height="150" rx="14" fill="#b2d4e1"/></g>
+<g transform="translate(300 300)"><rect width="200" height="150" rx="14" fill="#35636d"/></g>
+<g transform="translate(540 300)"><rect width="200" height="150" rx="14" fill="#a9cad2"/></g>
+</g>
+<g fill="#f5faff">
+<rect x="76" y="226" width="110" height="12" rx="6"/><rect x="316" y="226" width="110" height="12" rx="6" fill="#17262b"/><rect x="556" y="226" width="110" height="12" rx="6"/>
+<rect x="76" y="402" width="110" height="12" rx="6" fill="#17262b"/><rect x="316" y="402" width="110" height="12" rx="6"/><rect x="556" y="402" width="110" height="12" rx="6" fill="#17262b"/>
+</g>
+<g fill="#f5faff">
+<path id="s" d="M0-10 3-3 10-3 4.500 2 6.500 9 0 5 -6.500 9 -4.500 2 -10-3 -3-3z" transform="translate(90 252) scale(.8)"/>
+<path d="M0-10 3-3 10-3 4.500 2 6.500 9 0 5 -6.500 9 -4.500 2 -10-3 -3-3z" transform="translate(112 252) scale(.8)"/>
+<path d="M0-10 3-3 10-3 4.500 2 6.500 9 0 5 -6.500 9 -4.500 2 -10-3 -3-3z" transform="translate(134 252) scale(.8)"/>
+</g>
+<g fill="#3f6e78">
+<path d="M0-10 3-3 10-3 4.500 2 6.500 9 0 5 -6.500 9 -4.500 2 -10-3 -3-3z" transform="translate(330 252) scale(.8)"/>
+<path d="M0-10 3-3 10-3 4.500 2 6.500 9 0 5 -6.500 9 -4.500 2 -10-3 -3-3z" transform="translate(352 252) scale(.8)"/>
+<path d="M0-10 3-3 10-3 4.500 2 6.500 9 0 5 -6.500 9 -4.500 2 -10-3 -3-3z" transform="translate(374 252) scale(.8)"/>
+<path d="M0-10 3-3 10-3 4.500 2 6.500 9 0 5 -6.500 9 -4.500 2 -10-3 -3-3z" transform="translate(396 252) scale(.8)"/>
+</g>
+<g fill="#f5faff">
+<path d="M0-10 3-3 10-3 4.500 2 6.500 9 0 5 -6.500 9 -4.500 2 -10-3 -3-3z" transform="translate(570 252) scale(.8)"/>
+<path d="M0-10 3-3 10-3 4.500 2 6.500 9 0 5 -6.500 9 -4.500 2 -10-3 -3-3z" transform="translate(592 252) scale(.8)"/>
+</g>
+</svg>

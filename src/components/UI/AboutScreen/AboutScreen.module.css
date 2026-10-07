@@ -17,6 +17,7 @@
 }
 
 .customBorder {
+  border-left: 1px solid;
   border-left: 0.5px;
   height: 450px;
 }
@@ -39,7 +40,3 @@
   justify-content: center;
   height: 100%;
 }
-
-
-
-

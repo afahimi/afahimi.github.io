@@ -14,13 +14,13 @@ const IntroScreen = () => {
       <img
         src={pfp}
         alt="Profile"
-        className={`${classes.profilePic} h-2/5 w-auto xl:h-auto xl:w-80 xl:ml-14 2xl:ml-36 rounded-xl transition ease-in-out duration-500 hover:scale-110`}
+        className={`${classes.profilePic} h-2/5 w-auto xl:h-auto xl:w-80 rounded-xl transition ease-in-out duration-500 hover:scale-110`}
       />
       <div
-        className={`hidden xl:block ${classes.customBorder} border-solid border-custom-blue h-4/5 ml-64 2xl:ml-48`}
+        className={`hidden xl:block ${classes.customBorder} border-solid border-custom-blue h-4/5`}
       />
-      <div className={`${classes.textSection} md:mr-150`}>
-        <div className="flex justify-center items-center flex-col mt-9 md:ml-36">
+      <div className={`${classes.textSection}`}>
+        <div className="flex justify-center items-center flex-col mt-9">
           <h1 className={`${classes.typewriter} text-xl md:text-2xl`}>
             👋 Hello, I am Amin!
           </h1>
